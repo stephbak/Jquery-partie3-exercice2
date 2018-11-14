@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <title>Jquery partie 3</title>
+</head>
+<body>
+  <button type="button" name="button" id="incrementNumber">+</button>
+  <button type="button" name="button" id="decrementNumber">-</button>
+  <input type="text" name="clickNumber" value="0" id="number">
+  <script type="text/javascript">
+  $(function(){
+    $('#incrementNumber').click(function(){
+      var number = $('#number').val();
+      number ++;
+      $('#number').val(number);
+    })
+    $('#decrementNumber').click(function(){
+      var number = $('#number').val();
+      number --;
+      $('#number').val(number);
+    })
+  });
+
+  </script>
+
+</body>
+</html>
